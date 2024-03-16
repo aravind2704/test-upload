@@ -1,0 +1,401 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  height: -webkit-fill-available;
+}
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  height: -webkit-fill-available;
+}
+::selection {
+  background: #2eff776d;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.animate-charcter {
+    background-image: linear-gradient(
+      -225deg,
+      #f3fffa 0%,
+      #5de9cd 29%,
+      #2eff78 67%,
+      #2cf9fc 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1s linear infinite;
+    display: inline-block;
+        font-size: 35px !important;
+        font-weight: 700;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 13px;
+        margin-left: calc(10%);
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .navbar-toggler {
+    border: 0;
+    margin-right: calc(10%);
+  }
+  .navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0;
+}
+.middle-bar {
+  margin: 5px;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #2eff77c6;
+}
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #2eff7783;
+  display: block;
+  transition: all 0.2s;
+}
+  .navbar-nav {
+    margin-right: calc(10%);
+    gap: 10px;
+  }
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: whitesmoke;
+  }
+  .nav-link:hover {
+    color: #2eff7799;
+    cursor: pointer;
+  }
+  .navbar-dark-bg {
+    background-color: black !important;
+    transition: ease-in 0.3s;
+}
+  .logo-2 {
+    font-family: monospace;
+    letter-spacing: 6.5px;
+    font-size:15px;
+    display: flex;
+    margin-top: -10px !important;
+}
+@media only screen and (max-width:780px) {
+  .nav-link {
+    margin-left: calc(10%);
+  }
+  html, body {
+    max-width: none !important;
+  }
+  .t-2 {
+    font-size: 50px !important;
+  }
+  .f-title {
+    font-size: 30px !important;
+  }
+  .ach-img {
+    height: 240px !important;
+  }
+  .collapse {
+    margin: 0%;
+    justify-self:flex-end;
+    background-color: black;
+    border-radius: 1em;
+    transition:ease 0.3s;
+  }
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ach-content {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .ach-title {
+    margin-top: 10px;
+  }
+  .trophy {
+    margin-left: -30px;
+  }
+  .parallax-content>h4 {
+    font-size: 25px !important;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width:480px) {
+  .nav-sections {
+    margin-left: calc(10%);
+  }
+  .social {
+    margin-left: calc(5%) !important;
+  }
+  .animate-charcter {
+    font-size: 25px !important;
+  }
+  .logo-2 {
+    font-size: 10px !important;
+    padding-top: 3px !important;
+  }
+}
+.hero {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent), url(./WhatsApp\ Image\ 2024-03-07\ at\ 9.03.21\ PM.jpeg);
+  height: 100svh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+}
+.hero-text {
+  margin-left: calc(10%);
+}
+.groups {
+  color: #2eff77;
+}
+.t-1,.t-3{
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: rgb(255, 255, 255);
+}
+.t-2 {
+  font-family: 'Technor', sans-serif;
+  font-size: 70px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.features {
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.f-title {
+  font-family: 'Technor', sans-serif;
+  font-size: 35px;
+}
+.small-black-line {
+  height: 6px;
+  width: 50px;
+  margin-top: -10px;
+  border-radius: 4px;
+  background-color: black;
+  text-align: center !important;
+}
+.f-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px !important;
+  justify-content: center;
+  max-width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.f-card {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px !important;
+  height: 220px;
+  width: 250px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #ffffff00;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s;
+}
+.f-card:hover {
+  border-radius: 16px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-bottom: solid 5px #2eff78;
+  transform: scale(1.05) !important;
+}
+.f-card:active {
+  transform: scale(0.95) rotateZ(1.7deg) !important;
+}
+.parallax {
+  display: flex;
+ justify-content: center !important;
+ align-items: center !important;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.parallax-img {
+  background-image: url('./WhatsApp\ Image\ 2024-02-29\ at\ 2.44.30\ PM.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.parallax-content>h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  max-width: 1000px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 35px;
+  color: whitesmoke;
+}
+span {
+  color: #2eff77;
+}
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  padding-bottom: 50px;
+}
+.ach-title {
+  font-family: 'Technor', sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.ach-cards {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 70px !important;
+}
+.ach-card {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  height: 110px;
+  max-width: 400px;
+  border-radius: 16px;
+  background-color: #F7F7F7;
+  box-shadow: 4px 4px 0 1px rgba(0,0,0);
+  transition: all 0.4s;
+}
+.ach-card:hover{
+  box-shadow: 4px 4px 0 1px #2eff77;
+  transform: scale(1.05) !important;
+}
+.ach-card:active {
+  transform: scale(0.95) rotateZ(1.7deg) !important;
+}
+.achs {
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.trophy {
+  position: absolute;
+  margin-top: -30px;
+}
+.next-page {
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+  margin-top: 10px;
+}
+.button {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.button>a {
+  text-decoration: none;
+  color: black;
+}
+.button:hover {
+  border-bottom: solid 4px #2eff77;
+  transition: all 0.3s;
+}
+button > img {
+  width: 34px;
+  margin-left: 2px;
+  transition: transform .3s ease-in-out;
+}
+button:hover img {
+  transform: translateX(5px);
+}
+.footer {
+  background-color: black !important;
+}
+.nav-sections {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.social {
+  display: flex;
+  margin-left: auto;
+  gap: 5px !important;
+  cursor: pointer;
+}
+.built-by {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -60px;
+}

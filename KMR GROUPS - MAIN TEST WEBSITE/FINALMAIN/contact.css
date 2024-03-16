@@ -1,0 +1,338 @@
+html,body{
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-color: black !important;
+}
+::selection {
+  background: #2eff776d;
+}
+  .navbar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+.animate-charcter {
+    background-image: linear-gradient(
+      -225deg,
+      #f3fffa 0%,
+      #5de9cd 29%,
+      #2eff78 67%,
+      #2cf9fc 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1s linear infinite;
+    display: inline-block;
+        font-size: 35px !important;
+        font-weight: 700;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 13px;
+        margin-left: calc(10%);
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.navbar-toggler {
+  border: 0;
+  margin-right: calc(10%);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0;
+}
+.middle-bar {
+  margin: 5px;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #2eff77c0;
+}
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #2eff78;
+  display: block;
+  transition: all 0.2s;
+}
+.navbar-nav {
+  margin-right: calc(10%);
+  gap: 10px !important;
+}
+.nav-link {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  color: whitesmoke !important;
+}
+.nav-link:hover {
+  color: #2eff7799 !important;
+  cursor: pointer;
+}
+.logo-2 {
+  font-family: monospace;
+  letter-spacing: 6.5px;
+  font-size:15px;
+  display: flex;
+  margin-top: -10px !important;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: calc(10%);
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: calc(10%);
+}
+.c-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 130px;
+}
+.c-card {
+  height: 100px;
+  width: 300px;
+  color: whitesmoke;
+  padding: 10px;
+}
+.c-card>h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+.c-card>h5 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.734);
+}
+.contact-us {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent), url(./WhatsApp\ Image\ 2024-03-07\ at\ 9.03.21\ PM.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.c-des {
+  text-align: center;
+  padding-top: 120px; 
+}
+.c-title {
+  font-family: 'Chillax', sans-serif;
+  font-weight: 700 !important;
+  color: whitesmoke;
+  letter-spacing: 3px;
+}
+.c-sub-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: whitesmoke;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px !important;
+  cursor: pointer;
+}
+.green-line {
+  height: 6px !important;
+  width: 50px !important;
+  border-radius: 4px;
+  background-color: #2eff78 !important;
+  text-align: center !important;
+}
+@media only screen and (max-width:780px) {
+  .contact-us {
+    background-image: none !important;
+    background-color: black;
+  }
+  .c-card>h5 {
+    font-size: 11px;
+  }
+  .left-side,.right-side {
+    float: none;
+    margin: 0 auto;
+  }
+  .c-cards {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .right-side {
+    order: -1;
+  }
+  .c-cards,
+  .c-des,
+  .contact-form {
+    width: 100%;
+  }
+
+  .c-cards {
+    padding-top: 130px;
+  }
+
+  .c-card {
+    width: 80%;
+  }
+
+  .part-1,
+  .part-2 {
+    gap: 20px;
+  }
+
+  #email,
+  #name,
+  #message {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+  .email, .name, .message-title {
+    font-size: 13px;
+  }
+  .c-des>h1 {
+    font-size: 23px;
+  }
+  .c-des>h4 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width:480px) {
+  .animate-charcter {
+    font-size: 25px !important;
+  }
+  .logo-2 {
+    font-size: 10px !important;
+    padding-top: 3px !important;
+  }
+}
+@media only screen and (max-width:700px) {
+  .part-1 {
+    gap: 30px !important;
+  }
+  #message {
+    width: 280px !important;
+  }
+  .nav-link {
+    margin-left: calc(10%);
+  }
+  .collapse {
+    margin: 0%;
+    justify-self:flex-end;
+    background-color: black;
+    border-radius: 1em;
+    transition:ease 0.3s;
+  }
+}
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.part-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.part-2 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center !important;
+  align-items: center;
+}
+.email, .name, .message-title {
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+#email, #name {
+  border: none;
+  width: 280px;
+  padding: 15px;
+  background-color: transparent;
+  border-bottom: 4px solid white;
+  transition:ease 0.3s;
+  border-radius: 1em;
+  color: whitesmoke;
+  outline: none;
+}
+#message {
+  border: none;
+  width: 660px;
+  padding: 15px;
+  background-color: transparent;
+  border-bottom: 4px solid white;
+  transition:ease 0.3s;
+  border-radius: 1em;
+  color: whitesmoke;
+  outline: none;
+}
+.button {
+  padding: 12px;
+  width: 130px;
+  border-radius: 40em;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: black;
+  color: whitesmoke;
+  border-bottom: solid 4px #2eff78;
+  transition:ease 0.3s;
+}
+#email:hover, #name:hover, #message:hover {
+  border-bottom: 4px solid #2eff78;
+}
+#email:focus, #name:focus, #message:focus {
+  border-bottom: 4px solid #2eff78;
+}
